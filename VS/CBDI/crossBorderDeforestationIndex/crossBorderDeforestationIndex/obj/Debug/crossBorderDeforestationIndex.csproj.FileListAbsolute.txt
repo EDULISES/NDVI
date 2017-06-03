@@ -1,0 +1,9 @@
+C:\Users\edwar\Documents\GIT\tesisuav\VS\CBDI\crossBorderDeforestationIndex\crossBorderDeforestationIndex\bin\Debug\crossBorderDeforestationIndex.exe.config
+C:\Users\edwar\Documents\GIT\tesisuav\VS\CBDI\crossBorderDeforestationIndex\crossBorderDeforestationIndex\obj\Debug\crossBorderDeforestationIndex.csprojResolveAssemblyReference.cache
+C:\Users\edwar\Documents\GIT\tesisuav\VS\CBDI\crossBorderDeforestationIndex\crossBorderDeforestationIndex\obj\Debug\crossBorderDeforestationIndex.Form1.resources
+C:\Users\edwar\Documents\GIT\tesisuav\VS\CBDI\crossBorderDeforestationIndex\crossBorderDeforestationIndex\obj\Debug\crossBorderDeforestationIndex.Properties.Resources.resources
+C:\Users\edwar\Documents\GIT\tesisuav\VS\CBDI\crossBorderDeforestationIndex\crossBorderDeforestationIndex\obj\Debug\crossBorderDeforestationIndex.csproj.GenerateResource.Cache
+C:\Users\edwar\Documents\GIT\tesisuav\VS\CBDI\crossBorderDeforestationIndex\crossBorderDeforestationIndex\bin\Debug\crossBorderDeforestationIndex.exe
+C:\Users\edwar\Documents\GIT\tesisuav\VS\CBDI\crossBorderDeforestationIndex\crossBorderDeforestationIndex\bin\Debug\crossBorderDeforestationIndex.pdb
+C:\Users\edwar\Documents\GIT\tesisuav\VS\CBDI\crossBorderDeforestationIndex\crossBorderDeforestationIndex\obj\Debug\crossBorderDeforestationIndex.exe
+C:\Users\edwar\Documents\GIT\tesisuav\VS\CBDI\crossBorderDeforestationIndex\crossBorderDeforestationIndex\obj\Debug\crossBorderDeforestationIndex.pdb
