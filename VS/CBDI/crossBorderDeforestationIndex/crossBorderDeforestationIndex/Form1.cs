@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Emgu.CV;
+using Emgu.CV.Aruco;
+using Emgu.CV.CvEnum;
+using Emgu.CV.Structure;
+using Emgu.CV.Util;
 
 namespace crossBorderDeforestationIndex
 {
@@ -25,7 +30,7 @@ namespace crossBorderDeforestationIndex
 
             try
             {
-                if (!(Directory.Exists(strDocumentsPath))) Directory.CreateDirectory(strDocumentsPath);
+                if (!(Directory.Exists(defaultFolder))) Directory.CreateDirectory(defaultFolder);
             }
             catch
             {
@@ -33,21 +38,23 @@ namespace crossBorderDeforestationIndex
             }
         }
 
+        /// <summary>
+        /// This function will open a JPEG image and it will show in a pictureBox
+        /// </summary>
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {            
+        {           
             OpenFileDialog findSrc = new OpenFileDialog();
+            // Enable the JPG filter
             findSrc.Filter = "Select image|*.jpg";
-            // 
             findSrc.FileName = "";
             findSrc.Title = "Open Image";
             findSrc.InitialDirectory = defaultFolder;
             if (findSrc.ShowDialog() == DialogResult.OK)
-            {
-                // 
-                string strSrcPath = findSrc.FileName;
-                this.picBoxRGB.ImageLocation = strSrcPath;
-                Bitmap rgbImg;
-                rgbImg = new Bitmap(strSrcPath);
+            {          
+                // Open image with OpenCV
+                Image<Bgr, Byte> rgbImage = new Image<Bgr, byte>(findSrc.FileName);
+                // Show image in a picture Box
+                picBoxRGB.Image = rgbImage.ToBitmap();
             }
         }
 
