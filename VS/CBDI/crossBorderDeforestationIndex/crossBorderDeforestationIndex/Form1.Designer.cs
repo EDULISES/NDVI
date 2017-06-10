@@ -44,6 +44,13 @@
             this.opnFileDialogSrc = new System.Windows.Forms.OpenFileDialog();
             this.imgPnl = new System.Windows.Forms.Panel();
             this.picBoxRGB = new System.Windows.Forms.PictureBox();
+            this.imgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.channelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.greenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nDVIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnStripTool.SuspendLayout();
             this.imgPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxRGB)).BeginInit();
@@ -124,6 +131,9 @@
             // 
             // toolsToolStripMenuItem
             // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.imgToolStripMenuItem,
+            this.nDVIToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
@@ -155,6 +165,9 @@
             // 
             // imgPnl
             // 
+            this.imgPnl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.imgPnl.Controls.Add(this.picBoxRGB);
             this.imgPnl.Location = new System.Drawing.Point(12, 27);
             this.imgPnl.Name = "imgPnl";
@@ -168,6 +181,60 @@
             this.picBoxRGB.Size = new System.Drawing.Size(254, 216);
             this.picBoxRGB.TabIndex = 0;
             this.picBoxRGB.TabStop = false;
+            // 
+            // imgToolStripMenuItem
+            // 
+            this.imgToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.channelsToolStripMenuItem,
+            this.colorToolStripMenuItem});
+            this.imgToolStripMenuItem.Name = "imgToolStripMenuItem";
+            this.imgToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.imgToolStripMenuItem.Text = "Image";
+            // 
+            // channelsToolStripMenuItem
+            // 
+            this.channelsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.blueToolStripMenuItem,
+            this.greenToolStripMenuItem,
+            this.redToolStripMenuItem});
+            this.channelsToolStripMenuItem.Name = "channelsToolStripMenuItem";
+            this.channelsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.channelsToolStripMenuItem.Text = "Channels";
+            // 
+            // blueToolStripMenuItem
+            // 
+            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
+            this.blueToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.blueToolStripMenuItem.Text = "Blue";
+            this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
+            // 
+            // greenToolStripMenuItem
+            // 
+            this.greenToolStripMenuItem.Name = "greenToolStripMenuItem";
+            this.greenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.greenToolStripMenuItem.Text = "Green";
+            this.greenToolStripMenuItem.Click += new System.EventHandler(this.greenToolStripMenuItem_Click);
+            // 
+            // redToolStripMenuItem
+            // 
+            this.redToolStripMenuItem.Name = "redToolStripMenuItem";
+            this.redToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.redToolStripMenuItem.Text = "Red";
+            this.redToolStripMenuItem.Click += new System.EventHandler(this.redToolStripMenuItem_Click);
+            // 
+            // nDVIToolStripMenuItem
+            // 
+            this.nDVIToolStripMenuItem.Name = "nDVIToolStripMenuItem";
+            this.nDVIToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nDVIToolStripMenuItem.Text = "NDVI";
+            this.nDVIToolStripMenuItem.Click += new System.EventHandler(this.nDVIToolStripMenuItem_Click);
+            // 
+            // colorToolStripMenuItem
+            // 
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -206,6 +273,13 @@
         private System.Windows.Forms.OpenFileDialog opnFileDialogSrc;
         private System.Windows.Forms.Panel imgPnl;
         private System.Windows.Forms.PictureBox picBoxRGB;
+        private System.Windows.Forms.ToolStripMenuItem imgToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem channelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem greenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem redToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nDVIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
     }
 }
 
