@@ -15,7 +15,8 @@ led = 24
 btnStart = 5
 status = False
 # Default path to create folders for photos
-imgFolderPath = '/home/pi/Cam/Pictures/'
+#imgFolderPath = '/home/pi/Cam/Pictures/'
+imgFolderPath = '/home/pi/NDVI/Pictures/'
 
 def startScript(channel):
 	global status
@@ -43,17 +44,22 @@ GPIO.output(led, 0)
 
 camera = PiCamera()
 
-while True:
-	if status == True:
-		subFolder = nameFolder()
-		print "Taking 50 pictures"
-		GPIO.output(led, 1)
-		camera.start_preview()
-		for i in range(10):
-		  time.sleep(.1)
-		  camera.capture( subFolder + 'image%s.jpg' % i)
-		camera.stop_preview()
-		GPIO.output(led, 0)
-		print "End Script"
-		status = False
-		time.sleep(1)
+try:
+	while True:
+		if status == True:
+			subFolder = nameFolder()
+			print "Taking 50 pictures"
+			GPIO.output(led, 1)
+			camera.start_preview()
+			time.sleep(3)
+			for i in range(10):
+			  time.sleep(.1)
+			  camera.capture( subFolder + 'image%s.jpg' % i)
+			camera.stop_preview()
+			GPIO.output(led, 0)
+			print "End Script"
+			status = False
+			time.sleep(1)
+except KeyboardInterrupt:
+	GPIO.cleanup()
+	pass
